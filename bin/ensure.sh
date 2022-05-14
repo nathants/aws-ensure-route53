@@ -13,6 +13,6 @@ aws-creds-temp() {
 (
     aws-creds-temp $cred
     cat accounts/$cred/dns.txt | while read line; do
-        bash -c "cli-aws route53-ensure-record $line"
+        bash -c "libaws route53-ensure-record $line"
     done
 )

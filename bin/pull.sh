@@ -6,9 +6,9 @@ aws-creds-temp() {
     . ~/.aws_creds/$1.sh
 }
 
-for cred in $(cli-aws creds-ls); do (
+for cred in $(libaws creds-ls); do (
     echo pull dns: $cred
     aws-creds-temp $cred
     mkdir -p accounts/$cred/
-    cli-aws route53-ls > accounts/$cred/dns.txt
+    libaws route53-ls > accounts/$cred/dns.txt
 ) done
