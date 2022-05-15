@@ -12,6 +12,8 @@ tooling to make managing your dns in route53 across multiple accounts simple and
 
 ```
 go install github.com/nathants/libaws@latest
+
+export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
 or use the [dockerfile](./Dockerfile)
