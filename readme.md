@@ -153,3 +153,4 @@ add `pull.sh` to your crontab to keep track of changes to your dns:
 ```
 
 when you notice uncommited changes in `git status`, you can either commit them, or investigate them. foo likely should not be barr.
+
